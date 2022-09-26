@@ -5,10 +5,15 @@ public class main {
         //int - integer
         int vecums = 39;
         System.out.println("Mans vecums ir " + vecums + " gadi.");
+
         int augums = 182;
         System.out.println("Mans augums ir " + augums + "cm.");
+
         String acuKrasa = "zaļa";
         System.out.println("Mana acu krāsa ir " + acuKrasa + ".");
+
+        char valuta = '$';
+        System.out.println("Dolāra apzīmējums ir " + valuta);
 
     }
 }
