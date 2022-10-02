@@ -1,9 +1,13 @@
 package lekcijaViens.majasDarbs;
 
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class FirstClass {
     public static void main(String[] args) {
+
+        // izveido Scanner
+        Scanner in = new Scanner(System.in);
 
         // Mainīgo definēšana
         String countryName = "Ķīna";
@@ -22,6 +26,7 @@ public class FirstClass {
         double gdpPerPersonUSD;
         double gdpPerPersonYuan;
         double currencyExchangeRate = 7.12;
+        String exchangeRateString;
         byte counter = 1;
 
         // Vai Ķīna ir Eiropas Savienībā?
@@ -51,6 +56,8 @@ public class FirstClass {
         System.out.println("ARITMĒTISKĀ OPERATORA PIEMĒRS #" + counter + " - ienākumi uz vienu iedzīvotāju: " + gdpPerPersonUSD + " " + currencyUSD +"/cilv.");
         counter++;
 
+        System.out.println("Ievadiet nākamajā rindā konsolē dollāra - juaņas kursu (tekošais kurss = " + currencyExchangeRate + "). Kurss jāievada kā decimālskaitlis.");
+        currencyExchangeRate = in.nextDouble();
         gdpPerPersonYuan = gdpPerPersonUSD * currencyExchangeRate;
         System.out.println("ARITMĒTISKĀ OPERATORA PIEMĒRS #" + counter + " - ienākumi uz vienu iedzīvotāju: " + gdpPerPersonYuan + " " + currencyYuan +"/cilv.");
         counter++;
