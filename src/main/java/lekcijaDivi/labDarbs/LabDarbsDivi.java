@@ -8,11 +8,6 @@ public class LabDarbsDivi {
         // SCANNER IZVEIDOŠANA
         Scanner scanner = new Scanner(System.in);
 
-        // MAINĪGO DEFINĒŠANA
-        int votersAge;
-        String votersName;
-        boolean hasVoted = false;
-
 //        // KODS - PIEMĒRI
 //        int x = 4;
 //        int y = 3;
@@ -28,6 +23,9 @@ public class LabDarbsDivi {
 //        System.out.println(color + " equals red? " + color.equals("red")); //false
 
 //        // KODS - VĒLĒŠANAS
+//        int votersAge;
+//        String votersName;
+//        boolean hasVoted = false;
 //
 //        System.out.println("Ievadiet savu vārdu:");
 //        votersName = scanner.nextLine();
@@ -169,8 +167,6 @@ public class LabDarbsDivi {
 //                break;
 //        }
 //        return result;
-
-
 
     }
 }
