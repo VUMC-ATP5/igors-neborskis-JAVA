@@ -165,9 +165,14 @@ public class HomeWorkTwo {
             // main metodē trīs reizes izsaukt šo metodi un uz ekrāna parādīt vizītkarti 3 reizes.
 
         System.out.println("\n\n*** UZDEVUMS #5 - METODE printBusinessCard ***");
-        printBusinessCard();
-        printBusinessCard();
-        printBusinessCard();
+//        printBusinessCard();
+//        printBusinessCard();
+//        printBusinessCard();
+        PrintBusinessCard.printBusinessCard();
+        PrintBusinessCard.printBusinessCard();
+        PrintBusinessCard.printBusinessCard();
+
+
 
         // *** UZDEVUMS #6 - METODE printBusinessCardTwo ***
         // Izveidot jaunu metodi kā 5. uzdevumā, bet ar nosaukumu printBusinessCardTwo(),
@@ -176,31 +181,33 @@ public class HomeWorkTwo {
         // Metodi izsaukt 2 reizes main() metodē ar dažādiem parametriem.
 
         System.out.println("\n\n*** UZDEVUMS #6 - METODE printBusinessCardTwo ***");
-        printBusinessCardTwo("Jānis", "Auziņš", "+372 355326", 1988);
-        printBusinessCardTwo("Jana", "Ozoliņa", "+371 2258744", 1984);
+//        printBusinessCardTwo("Jānis", "Auziņš", "+372 355326", 1988);
+//        printBusinessCardTwo("Jana", "Ozoliņa", "+371 2258744", 1984);
+        PrintBusinessCardTwo.printBusinessCardTwo("Jānis", "Auziņš", "+372 355326", 1988);
+        PrintBusinessCardTwo.printBusinessCardTwo("Jana", "Ozoliņa", "+371 2258744", 1984);
     }
 
-    static void printBusinessCard(){
-        String name = "Igors";
-        String surname = "Ņeborskis";
-        String phone = "+371 .....";
-        int birthYear = 1983;
+//    static void printBusinessCard(){
+//        String name = "Igors";
+//        String surname = "Ņeborskis";
+//        String phone = "+371 .....";
+//        int birthYear = 1983;
+//
+//        System.out.println("\nVizītkarte");
+//        System.out.println("##########");
+//        System.out.println("Vārds: " + name);
+//        System.out.println("Uzvārds: " + surname);
+//        System.out.println("Tālr.: " + phone);
+//        System.out.println("Dzimšanas gads: " + birthYear);
+//    }
 
-        System.out.println("\nVizītkarte");
-        System.out.println("##########");
-        System.out.println("Vārds: " + name);
-        System.out.println("Uzvārds: " + surname);
-        System.out.println("Tālr.: " + phone);
-        System.out.println("Dzimšanas gads: " + birthYear);
-    }
-
-    static void printBusinessCardTwo(String name, String surname, String phone, int birthYear){
-        System.out.println("\nVizītkarte");
-        System.out.println("##########");
-        System.out.println("Vārds: " + name);
-        System.out.println("Uzvārds: " + surname);
-        System.out.println("Tālr.: " + phone);
-        System.out.println("Dzimšanas gads: " + birthYear);
-    }
+//    static void printBusinessCardTwo(String name, String surname, String phone, int birthYear){
+//        System.out.println("\nVizītkarte");
+//        System.out.println("##########");
+//        System.out.println("Vārds: " + name);
+//        System.out.println("Uzvārds: " + surname);
+//        System.out.println("Tālr.: " + phone);
+//        System.out.println("Dzimšanas gads: " + birthYear);
+//    }
 
 }
