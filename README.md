@@ -5,4 +5,4 @@
 
 **4.lekcijas JAVA**
 - lab.darbs JAVA#2: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/blob/main/src/main/java/lekcijaDivi/labDarbs/LabDarbsDivi.java]
-- mājasdarbs JAVA#2: 
+- mājasdarbs JAVA#2: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/blob/main/src/main/java/lekcijaDivi/majasDarbs/HomeWorkTwo.java]
