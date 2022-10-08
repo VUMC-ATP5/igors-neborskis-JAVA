@@ -52,7 +52,7 @@ public class RandomNumberJavaExtra3 {
                 System.exit(0);
             }
         }
-        System.out.println("Visi mēģinājumi ir beigušies");
+        System.out.println("\n!!! Visi mēģinājumi ir beigušies !!!");
         System.out.println("*** PROGRAMMAS BEIGAS ***");
     }
 }
