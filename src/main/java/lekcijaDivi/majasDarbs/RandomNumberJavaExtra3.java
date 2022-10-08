@@ -28,6 +28,7 @@ public class RandomNumberJavaExtra3 {
 
             if (enteredNumber<0 || enteredNumber>50){
                 System.out.println("Ievadītais skaitlis ir ārpus robežām 0-50");
+                counter--;
             }
             else if (enteredNumber==x){
                 System.out.println("Apsveicu. Esi uzminējis. Uzģenerētais skaitlis ir " + x);
@@ -39,14 +40,16 @@ public class RandomNumberJavaExtra3 {
             else if (x>enteredNumber) {
                 x1 = enteredNumber;
                 System.out.println("Neuzminēji. Ievadītais skaitlis ir mazāks par uzģenerēto. Jaunās robežas ir " + x1 + "-" + x2);
+                counter--;
             }
             else if (x<enteredNumber) {
                 x2 = enteredNumber;
                 System.out.println("Neuzminēji. Ievadītais skaitlis ir lielāks par uzģenerēto. Jaunās robežas ir " + x1 + "-" + x2);
+                counter--;
             }
-            counter--;
             else {
                 System.out.println("vvz...");
+                System.exit(0);
             }
         }
         System.out.println("Visi mēģinājumi ir beigušies");
