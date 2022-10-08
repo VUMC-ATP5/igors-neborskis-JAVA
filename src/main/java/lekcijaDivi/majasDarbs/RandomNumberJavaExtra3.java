@@ -3,7 +3,7 @@ package lekcijaDivi.majasDarbs;
 import java.util.Random;
 import java.util.Scanner;
 
-public class RandomNumber {
+public class RandomNumberJavaExtra3 {
 
     public static void main(String[] args) {
 
