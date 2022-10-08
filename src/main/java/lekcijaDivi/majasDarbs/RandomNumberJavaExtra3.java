@@ -30,6 +30,8 @@ public class RandomNumberJavaExtra3 {
             }
             else if (enteredNumber==x){
                 System.out.println("Apsveicu. Esi uzminējis. Uzģenerētais skaitlis ir " + x);
+                counter--;
+                System.out.println("Izmantoti " + (10-counter) + " mēģinājumi");
                 System.out.println("*** PROGRAMMAS BEIGAS ***");
                 System.exit(0);
             }
