@@ -19,6 +19,7 @@ public class RandomNumberJavaExtra3 {
         int x1 = 0;
         int x2 = 50;
         int enteredNumber;
+
         // kods
         while (counter>0) {
             System.out.println("\nAtlikušo mēģinājumu skaits: " + counter);
@@ -44,6 +45,9 @@ public class RandomNumberJavaExtra3 {
                 System.out.println("Neuzminēji. Ievadītais skaitlis ir lielāks par uzģenerēto. Jaunās robežas ir " + x1 + "-" + x2);
             }
             counter--;
+            else {
+                System.out.println("vvz...");
+            }
         }
         System.out.println("Visi mēģinājumi ir beigušies");
         System.out.println("*** PROGRAMMAS BEIGAS ***");
