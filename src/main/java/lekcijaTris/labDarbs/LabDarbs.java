@@ -152,7 +152,7 @@ public class LabDarbs {
         }
     }
 
-    public static void playCards() {
+        public static void playCards() {
         String[] kartis = {"Pīķa dūzis", "Ercena kalps", "Kreiča dūzis"};
 
         for (int i = 0; i < kartis.length; i++) {
@@ -172,8 +172,5 @@ public class LabDarbs {
             System.out.println(number);
         }
     }
-
-
-
 
 }
