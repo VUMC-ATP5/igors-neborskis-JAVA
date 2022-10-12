@@ -20,9 +20,11 @@ public class ExtraUzdevumsCetri {
                 if (enteredNumber % counter == 0 && counter != enteredNumber) {
                     System.out.println("Skaitlis " + enteredNumber + " NAV pirmskaitlis");
                     ++counter;
+                    break;
                     //System.exit(0);
                 } else if (enteredNumber % counter == 0 && counter == enteredNumber) {
                     System.out.println("Skaitlis " + enteredNumber + " IR pirmskaitlis");
+                    break;
                     //System.exit(0);
                 }
             }
