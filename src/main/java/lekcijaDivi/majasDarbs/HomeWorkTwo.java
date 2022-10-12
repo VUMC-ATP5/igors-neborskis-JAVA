@@ -1,5 +1,7 @@
 package lekcijaDivi.majasDarbs;
 
+import lekcijaTris.majasDarbs.PromptEnterKey;
+
 import java.util.Scanner;
 
 public class HomeWorkTwo {
@@ -7,6 +9,8 @@ public class HomeWorkTwo {
 
         // SCANNER IZVEIDOŠANA
         Scanner scannerInt = new Scanner(System.in);
+
+        PromptEnterKey.promptEnterKey();
 
         // *** UZDEVUMS #1 - LOĢISKĀS IZTEIKSMES ***
 
@@ -61,6 +65,7 @@ public class HomeWorkTwo {
         System.out.println("t1=" + t1 + " " + ((t1 * t1) > 10));
         System.out.println("t2=" + t2 + " " + ((t2 * t2) > 10));
 
+        PromptEnterKey.promptEnterKey();
 
         // *** UZDEVUMS #2 - KALENDĀRS ***
             // Tajā pašā klasē un main metodē zemāk uzrakstīt programmu,
@@ -114,6 +119,8 @@ public class HomeWorkTwo {
                 break;
         }
 
+        PromptEnterKey.promptEnterKey();
+
         // *** UZDEVUMS #3 - LIELĀKAIS SKAITLIS ***
             // Tajā pašā klasē un main metodē zemāk uzrakstīt programmu,
             // kas pieņem trīs veselus skaitļus un izvada uz ekrāna,
@@ -134,6 +141,8 @@ public class HomeWorkTwo {
         } else {
             System.out.println("Lielākais skaitlis ir " + Math.max(b, c));
         }
+
+        PromptEnterKey.promptEnterKey();
 
         // *** UZDEVUMS #4 - LUKSOFORS ***
             // Tajā pašā klasē un main metodē zemāk uzrakstīt programmu,
@@ -159,6 +168,8 @@ public class HomeWorkTwo {
             System.out.println("Luksofors nestrādā!");
         }
 
+        PromptEnterKey.promptEnterKey();
+
         // *** UZDEVUMS #5 - METODE printBusinessCard ***
             // Uzrakstīt atsevišķi metodi printBusinessCard, kura neatgriež neko,
             // bet izvada ekrānā cilvēka vizītkarti ar cilvēka vārdu, uzvārdu, telefonu un dzimšanas gadu.
@@ -172,7 +183,7 @@ public class HomeWorkTwo {
         PrintBusinessCard.printBusinessCard();
         PrintBusinessCard.printBusinessCard();
 
-
+        PromptEnterKey.promptEnterKey();
 
         // *** UZDEVUMS #6 - METODE printBusinessCardTwo ***
         // Izveidot jaunu metodi kā 5. uzdevumā, bet ar nosaukumu printBusinessCardTwo(),
