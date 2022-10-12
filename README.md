@@ -1,8 +1,12 @@
 ## JAVA mācību faili
 
-**3.lekcija JAVA**
+**3.lekcija JAVA #1**
 - mājasdarbs JAVA#1: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/blob/main/src/main/java/lekcijaViens/majasDarbs/FirstClass.java]
 
-**4.lekcijas JAVA**
-- lab.darbs JAVA#2: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/blob/main/src/main/java/lekcijaDivi/labDarbs/]
-- mājasdarbs JAVA#2: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/blob/main/src/main/java/lekcijaDivi/majasDarbs/]
+**4.lekcija JAVA #2 - if..else**
+- lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/blob/main/src/main/java/lekcijaDivi/labDarbs/]
+- mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/blob/main/src/main/java/lekcijaDivi/majasDarbs/]
+
+**5.lekcija JAVA #3 - arrays**
+- lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/blob/main/src/main/java/lekcijaTris/labDarbs/]
+- mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaTris/majasDarbs]
