@@ -65,7 +65,8 @@ public class LabDarbsCetri {
         veloDivi.speedDown(10);
         veloDivi.printSpeed();
 
-        Velo veloTris = new Velo();
+        Velo veloTris = new Velo("ZZK", "XL", 26, 25);
+
 
         System.out.println("\nZIVS");
 
@@ -95,5 +96,16 @@ public class LabDarbsCetri {
         kakisTaisons.printKakis();
         kakisTaisons.feedCat(zivsViens);
         kakisTaisons.feedCat(zivsDivi);
+
+        System.out.println("\nRIŅĶA LAUKUMS");
+        Circle rinkisViens = new Circle(5);
+        rinkisViens.circleName = "A";
+        Circle rinkisDivi = new Circle(10);
+        rinkisDivi.circleName = "B";
+        System.out.println("Riņķa " + rinkisViens.circleName + " laukums ir " + rinkisViens.cirlceSquare());
+        System.out.println("Riņķa " + rinkisViens.circleName + " līnijas garums ir " + rinkisViens.circleLenght());
+        System.out.println("Riņķa " + rinkisDivi.circleName + " laukums ir " + rinkisDivi.cirlceSquare());
+        System.out.println("Riņķa " + rinkisDivi.circleName + " līnijas garums ir " + rinkisDivi.circleLenght());
+
     }
 }
