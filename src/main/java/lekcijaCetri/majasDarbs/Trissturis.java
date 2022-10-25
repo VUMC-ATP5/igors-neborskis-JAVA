@@ -37,9 +37,9 @@ public class Trissturis {
         }
     }
     public boolean vaiTristurisEksiste(){
-        return (((malaA<malaB+malaC)&&(malaA>Math.abs(malaB-malaC))) &&
-                ((malaB<malaA+malaC)&&(malaB>Math.abs(malaA-malaC))) &&
-                ((malaC<malaA+malaB)&&(malaC>Math.abs(malaA-malaB)))
+        return (((malaA < malaB + malaC) && (malaA > Math.abs(malaB - malaC))) &&
+                ((malaB < malaA + malaC) && (malaB > Math.abs(malaA - malaC))) &&
+                ((malaC < malaA + malaB) && (malaC > Math.abs(malaA - malaB)))
         );
     }
     public boolean vaiTristurisVienadmalu(){
