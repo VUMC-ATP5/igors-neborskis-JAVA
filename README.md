@@ -10,3 +10,11 @@
 **5.lekcija JAVA #3 - arrays**
 - lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/blob/main/src/main/java/lekcijaTris/labDarbs/]
 - mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaTris/majasDarbs]
+
+**6.lekcija JAVA #4 - constructors**
+- lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaCetri/labDarbs]
+- mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaCetri/majasDarbs]
+
+**7.lekcija JAVA #5 - incapsulation, polymorphism, static**
+- lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaPieci/labDarbs]
+- mājasdarbs: 
