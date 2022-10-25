@@ -19,10 +19,11 @@ public class Trissturis {
         System.out.println("\nVeidojam jaunu trīsstūri ar malām A, B, C");
     }
     public void rekinatLaukumu(){
+
         System.out.println("\nTrīstura mala A: " + malaA);
         System.out.println("Trīstura mala B: " + malaB);
-
         System.out.println("Trīstura mala C: " + malaC);
+
         if (vaiTristurisEksiste()==true) {
             pusperimetrs = (malaA + malaB + malaC) / 2;
             laukums = Math.sqrt(pusperimetrs * (pusperimetrs - malaA) * (pusperimetrs - malaB) *
