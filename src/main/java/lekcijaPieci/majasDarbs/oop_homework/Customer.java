@@ -46,5 +46,7 @@ public class Customer {
         this.memberType = memberType;
     }
 
-
+    public void memberVisit(){
+        System.out.println("\nMember " + getName());
+    }
 }

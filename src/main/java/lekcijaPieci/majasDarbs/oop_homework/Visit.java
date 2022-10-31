@@ -11,8 +11,4 @@ public class Visit extends Customer {
         super(name, member, memberType);
     }
 
-    public void memberVisit(){
-        System.out.println("Member " + getName());
-    }
-
 }

@@ -13,5 +13,7 @@ public class Example {
         System.out.println(premiumMember.toString());
         System.out.println(goldMember.toString());
         System.out.println(silverMember.toString());
+
+        noMember.memberVisit();
     }
 }
