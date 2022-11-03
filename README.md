@@ -17,4 +17,4 @@
 
 **7.lekcija JAVA #5 - incapsulation, polymorphism, static**
 - lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaPieci/labDarbs]
-- mājasdarbs: 
+- mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaPieci/majasDarbs]
