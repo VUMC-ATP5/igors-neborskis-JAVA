@@ -1,20 +1,25 @@
 package lekcijaPieci.majasDarbs.oop_homework;
 
-public class Customer {
+public class Customer extends Visit {
+
     String name;
     Boolean member;
-    String memberType;
+    static String memberType;
 
     // konstruktors Customer
     public Customer(String name, Boolean member, String memberType) {
+        super();
         this.name = name;
         this.member = member;
         this.memberType = memberType;
+//        this.date = date;
+//        this.serviceExpense = serviceExpense;
+//        this.productExpense = productExpense;
     }
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "\n\nCustomer{" +
                 "name='" + name + '\'' +
                 ", member=" + member +
                 ", memberType='" + memberType + '\'' +
@@ -38,7 +43,7 @@ public class Customer {
         this.member = member;
     }
 
-    public String getMemberType() {
+    public static String getMemberType() {
         return memberType;
     }
 
@@ -46,7 +51,15 @@ public class Customer {
         this.memberType = memberType;
     }
 
-    public void memberVisit(){
-        System.out.println("\nMember " + getName());
+    public void prepareCheck(){
+        if (member == true && memberType.equals("SILVER")){
+            silverMemberCheck();
+        } else if (member == true && memberType.equals("GOLD")) {
+            goldMemberCheck();
+        } else if (member == true && memberType.equals("PREMIUM")) {
+            premiumMemberCheck();
+        } else {
+            noMemberCheck();
+        }
     }
 }
