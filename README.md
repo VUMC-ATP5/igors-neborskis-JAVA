@@ -18,3 +18,8 @@
 **7.lekcija JAVA #5 - incapsulation, polymorphism, static**
 - lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaPieci/labDarbs]
 - mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaPieci/majasDarbs]
+
+**8.lekcija JAVA #6 - TestNG & MAVEN **
+- lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaSesi/labDarbs]
+- mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaSesi/majasDarbs]
+- mājasdarbs (testi): [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/test/java/lekcijaSesiTest/majasDarbs]
