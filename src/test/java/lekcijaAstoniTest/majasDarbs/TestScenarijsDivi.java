@@ -1,6 +1,7 @@
 package lekcijaAstoniTest.majasDarbs;
 
 import lekcijaAstoni.souceDemoPageObjects.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -75,6 +76,7 @@ public class TestScenarijsDivi extends BaseTest {
         loginPage.login("standard_user", "secret_sauce");
 
         ProductsPage productsPage = new ProductsPage(browserChrome);
+        wait.until(ExpectedConditions.visibilityOf(productsPage.getPageTitle()));
         Assert.assertEquals(productsPage.getPageTitle().getText(),"PRODUCTS");
         productsPage.getShoppingCartButton().click();
         Thread.sleep(500);
