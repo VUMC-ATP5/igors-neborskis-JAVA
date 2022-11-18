@@ -26,6 +26,6 @@
 
 **9.lekcija JAVA #76 - Selenium**
 - lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/test/java/lekcijaSeptiniTest/labDarbs]
-- mājasdarbs:
-- mājasdarbs (testi):
+- mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaAstoni/pageObjectsHomework]
+- mājasdarbs (testi): [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/test/java/lekcijaAstoniTest/seleniumHomework]
 
