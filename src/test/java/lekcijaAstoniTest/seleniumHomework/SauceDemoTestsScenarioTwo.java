@@ -1,106 +1,131 @@
-package lekcijaAstoniTest.majasDarbs;
+package lekcijaAstoniTest.seleniumHomework;
 
-import lekcijaAstoni.souceDemoPageObjects.*;
+import lekcijaAstoni.pageObjectsHomework.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestScenarijsDivi extends BaseTest {
+public class SauceDemoTestsScenarioTwo extends BaseTest {
 
     @Test
     public void testMandatoryFirstName() throws InterruptedException {
-        LoginPage loginPage = new LoginPage(browserChrome);
-        loginPage.login("standard_user", "secret_sauce");
+        System.out.println("TEST #" + counter + " - CheckoutPage. Validate that 'First Name' field is mandatory");
 
+        //LoginPage
+        LoginPage loginPage = new LoginPage(browserChrome);
+        loginPage.login(loginStandardUser, passwordCorrect);
+
+        //ProductsPage
         ProductsPage productsPage = new ProductsPage(browserChrome);
         Assert.assertEquals(productsPage.getPageTitle().getText(),"PRODUCTS");
-        productsPage.getShoppingCartButton().click();
+        productsPage.getButtonShoppingCart().click();
         Thread.sleep(500);
 
+        //CartPage
         CartPage cartPage = new CartPage(browserChrome);
         Assert.assertEquals(cartPage.getPageTitle().getText(),"YOUR CART");
-        cartPage.getCheckoutButton().click();
+        cartPage.getButtonCheckout().click();
 
+        //CheckoutPage
         CheckoutPage checkoutPage = new CheckoutPage(browserChrome);
         Assert.assertEquals(checkoutPage.getPageTitle().getText(),"CHECKOUT: YOUR INFORMATION");
-        checkoutPage.validateFields("", "Mencis", "LV2132");
+        checkoutPage.fillCheckoutFields("", lastName, postalCode);
         Assert.assertEquals(checkoutPage.getErrorMessage().getText(), "Error: First Name is required");
         Thread.sleep(500);
     }
 
     @Test
     public void testMandatoryLastName() throws InterruptedException {
-        LoginPage loginPage = new LoginPage(browserChrome);
-        loginPage.login("standard_user", "secret_sauce");
+        System.out.println("TEST #" + counter + " - CheckoutPage. Validate that 'Last Name' field is mandatory");
 
+        //LoginPage
+        LoginPage loginPage = new LoginPage(browserChrome);
+        loginPage.login(loginStandardUser, passwordCorrect);
+
+        //ProductsPage
         ProductsPage productsPage = new ProductsPage(browserChrome);
         Assert.assertEquals(productsPage.getPageTitle().getText(),"PRODUCTS");
-        productsPage.getShoppingCartButton().click();
+        productsPage.getButtonShoppingCart().click();
         Thread.sleep(500);
 
+        //CartPage
         CartPage cartPage = new CartPage(browserChrome);
         Assert.assertEquals(cartPage.getPageTitle().getText(),"YOUR CART");
-        cartPage.getCheckoutButton().click();
+        cartPage.getButtonCheckout().click();
 
+        //CheckoutPage
         CheckoutPage checkoutPage = new CheckoutPage(browserChrome);
         Assert.assertEquals(checkoutPage.getPageTitle().getText(),"CHECKOUT: YOUR INFORMATION");
-        checkoutPage.validateFields("Jānis", "", "LV2132");
+        checkoutPage.fillCheckoutFields(firstName, "", postalCode);
         Assert.assertEquals(checkoutPage.getErrorMessage().getText(), "Error: Last Name is required");
         Thread.sleep(500);
     }
 
     @Test
     public void testMandatoryPostal() throws InterruptedException {
-        LoginPage loginPage = new LoginPage(browserChrome);
-        loginPage.login("standard_user", "secret_sauce");
+        System.out.println("TEST #" + counter + " - CheckoutPage. Validate that 'Postal Code' field is mandatory");
 
+        //LoginPage
+        LoginPage loginPage = new LoginPage(browserChrome);
+        loginPage.login(loginStandardUser, passwordCorrect);
+
+        //ProductsPage
         ProductsPage productsPage = new ProductsPage(browserChrome);
         Assert.assertEquals(productsPage.getPageTitle().getText(),"PRODUCTS");
-        productsPage.getShoppingCartButton().click();
+        productsPage.getButtonShoppingCart().click();
         Thread.sleep(500);
 
+        //CartPage
         CartPage cartPage = new CartPage(browserChrome);
         Assert.assertEquals(cartPage.getPageTitle().getText(),"YOUR CART");
-        cartPage.getCheckoutButton().click();
+        cartPage.getButtonCheckout().click();
 
+        //CheckoutPage
         CheckoutPage checkoutPage = new CheckoutPage(browserChrome);
         Assert.assertEquals(checkoutPage.getPageTitle().getText(),"CHECKOUT: YOUR INFORMATION");
-        checkoutPage.validateFields("Jānis", "Mencis", "");
+        checkoutPage.fillCheckoutFields(firstName, lastName, "");
         Assert.assertEquals(checkoutPage.getErrorMessage().getText(), "Error: Postal Code is required");
         Thread.sleep(500);
     }
 
     @Test
     public void testMandatoryCheckAll() throws InterruptedException {
-        LoginPage loginPage = new LoginPage(browserChrome);
-        loginPage.login("standard_user", "secret_sauce");
+        System.out.println("TEST #" + counter + " - CheckoutPage. Validate that all three fields are mandatory");
 
+        //LoginPage
+        LoginPage loginPage = new LoginPage(browserChrome);
+        loginPage.login(loginStandardUser, passwordCorrect);
+
+        //ProductsPage
         ProductsPage productsPage = new ProductsPage(browserChrome);
         wait.until(ExpectedConditions.visibilityOf(productsPage.getPageTitle()));
         Assert.assertEquals(productsPage.getPageTitle().getText(),"PRODUCTS");
-        productsPage.getShoppingCartButton().click();
+        productsPage.getButtonShoppingCart().click();
         Thread.sleep(500);
 
+        //CartPage
         CartPage cartPage = new CartPage(browserChrome);
         Assert.assertEquals(cartPage.getPageTitle().getText(),"YOUR CART");
-        cartPage.getCheckoutButton().click();
+        cartPage.getButtonCheckout().click();
 
+        //CheckoutPage
         CheckoutPage checkoutPage = new CheckoutPage(browserChrome);
         Assert.assertEquals(checkoutPage.getPageTitle().getText(),"CHECKOUT: YOUR INFORMATION");
-        checkoutPage.validateFields("", "", "");
+        checkoutPage.fillCheckoutFields("", "", "");
         Assert.assertEquals(checkoutPage.getErrorMessage().getText(), "Error: First Name is required");
         Thread.sleep(500);
-        checkoutPage.validateFields("Artūrs", "", "");
+        checkoutPage.fillCheckoutFields(firstName, "", "");
         Assert.assertEquals(checkoutPage.getErrorMessage().getText(), "Error: Last Name is required");
         Thread.sleep(500);
         browserChrome.navigate().refresh();
-        checkoutPage.validateFields("Artūrs", "Ranka", "");
+        checkoutPage.fillCheckoutFields(firstName, lastName, "");
         Assert.assertEquals(checkoutPage.getErrorMessage().getText(), "Error: Postal Code is required");
         Thread.sleep(500);
         browserChrome.navigate().refresh();
-        checkoutPage.validateFields("Artūrs", "Ranka", "LV2222");
+        checkoutPage.fillCheckoutFields(firstName, lastName, postalCode);
         Thread.sleep(500);
 
+        //CheckoutOverviewPage
         CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage(browserChrome);
         Assert.assertEquals(checkoutOverviewPage.getPageTitle().getText(),"CHECKOUT: OVERVIEW");
     }

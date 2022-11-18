@@ -1,4 +1,4 @@
-package lekcijaAstoni.souceDemoPageObjects;
+package lekcijaAstoni.pageObjectsHomework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,7 +37,7 @@ public class CheckoutPage {
 
 
 
-    public void validateFields(String firstName, String lastName, String postalCode) throws InterruptedException {
+    public void fillCheckoutFields(String firstName, String lastName, String postalCode) throws InterruptedException {
         getFirstName().sendKeys(firstName);
         getLastName().sendKeys(lastName);
         getPostalCode().sendKeys(postalCode);

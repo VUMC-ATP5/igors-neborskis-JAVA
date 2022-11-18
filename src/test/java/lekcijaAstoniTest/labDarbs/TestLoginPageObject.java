@@ -1,7 +1,7 @@
 package lekcijaAstoniTest.labDarbs;
 
-import lekcijaAstoni.souceDemoPageObjects.LoginPage;
-import lekcijaAstoni.souceDemoPageObjects.ProductsPage;
+import lekcijaAstoni.pageObjectsHomework.LoginPage;
+import lekcijaAstoni.pageObjectsHomework.ProductsPage;
 import lekcijaSeptiniTest.labDarbs.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;

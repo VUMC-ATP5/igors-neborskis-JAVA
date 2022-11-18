@@ -1,4 +1,4 @@
-package lekcijaAstoni.souceDemoPageObjects;
+package lekcijaAstoni.pageObjectsHomework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,7 +37,6 @@ public class LoginPage {
     public void login(String username, String password) throws InterruptedException {
         getUsernameInputField().sendKeys(username);
         getPasswordInputField().sendKeys(password);
-        //wait(1000);
         getLoginButton().click();
         Thread.sleep(5000);
     }
