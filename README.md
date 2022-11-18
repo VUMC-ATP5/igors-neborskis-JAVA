@@ -24,8 +24,10 @@
 - mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaSesi/majasDarbs]
 - mājasdarbs (testi): [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/test/java/lekcijaSesiTest/majasDarbs]
 
-**9.lekcija JAVA #76 - Selenium**
+**9.lekcija JAVA #7 - Selenium**
 - lab.darbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/test/java/lekcijaSeptiniTest/labDarbs]
+
+**10.lekcija JAVA #8 - Selenium**
 - mājasdarbs: [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/main/java/lekcijaAstoni/pageObjectsHomework]
 - mājasdarbs (testi): [https://github.com/VUMC-ATP5/igors-neborskis-JAVA/tree/main/src/test/java/lekcijaAstoniTest/seleniumHomework]
 
