@@ -14,7 +14,7 @@ public class SauceDemoTestsScenarioOne extends BaseTest{
         LoginPage loginPage = new LoginPage(browserChrome);
         loginPage.login(loginStandardUser, passwordCorrect);
         counter++;
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         //ProductsPage
         System.out.println("STEP #" + counter + " - 'Products page'. Add 2 products (backpack & jacket) to cart and navigate to 'Cart page'");
@@ -28,7 +28,7 @@ public class SauceDemoTestsScenarioOne extends BaseTest{
         String expectedProductNameJacket = productsPage.getProductNameJacket();
         Assert.assertEquals(productsPage.getProductCountBadge(),"2");
         counter++;
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         //CartPage
         System.out.println("STEP #" + counter + " - 'Cart page'. Validate products (backpack & jacket) in cart and navigate to 'Checkout page'");
@@ -39,7 +39,7 @@ public class SauceDemoTestsScenarioOne extends BaseTest{
         Assert.assertEquals(cartPage.getProductCountBadge(),"2");
         cartPage.getButtonCheckout().click();
         counter++;
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         //CheckoutPage
         System.out.println("STEP #" + counter + " - 'Checkout page'. Fill requested fields (first name, last name & postal code) and navigate to 'Checkout Overview page'");
@@ -47,7 +47,7 @@ public class SauceDemoTestsScenarioOne extends BaseTest{
         Assert.assertEquals(checkoutPage.getPageTitle().getText(),"CHECKOUT: YOUR INFORMATION");
         checkoutPage.fillCheckoutFields(firstName, lastName, postalCode);
         counter++;
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         //CheckoutOverviewPage
         System.out.println("STEP #" + counter + " - 'Checkout Overview page'. Validate products (backpack & jacket) in cart and finish order");
@@ -58,7 +58,7 @@ public class SauceDemoTestsScenarioOne extends BaseTest{
         Assert.assertEquals(checkoutOverviewPage.getProductCountBadge(),"2");
         checkoutOverviewPage.getButtonFinish().click();
         counter++;
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         //CheckoutCompletePage
         System.out.println("STEP #" + counter + " - 'Checkout Complete page'. Validate order complete and navigate back to 'Products page'");
@@ -66,7 +66,7 @@ public class SauceDemoTestsScenarioOne extends BaseTest{
         Assert.assertEquals(checkoutCompletePage.getCompleteMessage().getText(),"THANK YOU FOR YOUR ORDER");
         checkoutCompletePage.getButtonBackHome().click();
         counter++;
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         //Test end - navigate to ProductsPage
         System.out.println("STEP #" + counter + " - 'Products page'. Validate navigation to 'Products page' and TEST FINISH");

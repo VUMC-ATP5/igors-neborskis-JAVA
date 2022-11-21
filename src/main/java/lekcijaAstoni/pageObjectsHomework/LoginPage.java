@@ -4,9 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPage {
-
-    WebDriver browserChrome;
+public class LoginPage extends BasePage{
 
     private By usernameInputField = By.id("user-name");
     private By passwordInputField = By.id("password");
@@ -42,6 +40,6 @@ public class LoginPage {
     }
 
     public LoginPage(WebDriver browserChrome) {
-        this.browserChrome = browserChrome;
+        super(browserChrome);
     }
 }

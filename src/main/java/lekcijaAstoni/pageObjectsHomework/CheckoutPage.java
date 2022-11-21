@@ -4,20 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class CheckoutPage {
+public class CheckoutPage extends BasePage {
 
-    WebDriver browserChrome;
-
-    private By pageTitle = By.cssSelector("span.title");
     private By firstName = By.id("first-name");
     private By lastName = By.id("last-name");
     private By postalCode = By.id("postal-code");
     private By continueButton = By.id("continue");
     private By errorMessage = By.cssSelector("div.error-message-container h3");
 
-    public WebElement getPageTitle(){
-        return browserChrome.findElement(pageTitle);
-    }
     public WebElement getFirstName(){
         return browserChrome.findElement(firstName);
     }
@@ -45,7 +39,7 @@ public class CheckoutPage {
         getContinueButton().click();
     }
     public CheckoutPage(WebDriver browserChrome) {
-        this.browserChrome = browserChrome;
+        super(browserChrome);
     }
 
 

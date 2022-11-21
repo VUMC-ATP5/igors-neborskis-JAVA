@@ -4,10 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ProductsPage {
-    WebDriver browserChrome;
+public class ProductsPage extends BasePage {
 
-    private By pageTitle = By.cssSelector("span.title");
     private By buttonShoppingCart = By.id("shopping_cart_container");
     private By addToCartBackpack = By.id("add-to-cart-sauce-labs-backpack");
     private By productNameBackpack = By.id("item_4_title_link");
@@ -15,9 +13,6 @@ public class ProductsPage {
     private By productNameJacket = By.id("item_5_title_link");
     private By productCountBadge = By.className("shopping_cart_badge");
 
-    public WebElement getPageTitle(){
-        return browserChrome.findElement(pageTitle);
-    }
 
     public WebElement getButtonShoppingCart(){
         return browserChrome.findElement(buttonShoppingCart);
@@ -43,7 +38,7 @@ public class ProductsPage {
         return browserChrome.findElement(productNameJacket).getText();
     }
     public ProductsPage(WebDriver browserChrome) {
-        this.browserChrome = browserChrome;
+        super(browserChrome);
     }
 
 }
