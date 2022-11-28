@@ -12,6 +12,8 @@ public class ProductsPage extends BasePage {
     private By addToCartJacket = By.id("add-to-cart-sauce-labs-fleece-jacket");
     private By productNameJacket = By.id("item_5_title_link");
     private By productCountBadge = By.className("shopping_cart_badge");
+    private By linkedInButton = By.cssSelector("li.social_linkedin > a");
+
 
 
     public WebElement getButtonShoppingCart(){
@@ -20,6 +22,10 @@ public class ProductsPage extends BasePage {
 
     public WebElement getAddToCartBackpack(){
         return browserChrome.findElement(addToCartBackpack);
+    }
+
+    public WebElement getLinkedInButton(){
+        return browserChrome.findElement(linkedInButton);
     }
 
     public String getProductNameBackpack(){
